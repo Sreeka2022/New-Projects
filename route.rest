@@ -1,0 +1,27 @@
+GET http://127.0.0.1:3000/subscribers
+
+###
+
+GET http://127.0.0.1:3000/subscribers/651c42b61da26ec499aede34
+
+###
+POST http://127.0.0.1:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"DEF",
+    "subscribedToChannel": "Channel ABC"
+
+}
+
+###
+DELETE http://127.0.0.1:3000/subscribers/651c45e00f1b69efe7dd2fc6
+
+###
+PATCH http://127.0.0.1:3000/subscribers/651c45e00f1b69efe7dd2fc6
+Content-Type: application/json
+
+{
+    "name":"ABC",
+
+}
